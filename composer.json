@@ -19,5 +19,11 @@
   "require": {
     "league/climate": "^3.2",
     "Tms157/Statsy": "master"
+  },
+  "autoload": {
+    "psr-4": {
+      "Robert430404\\StatsyCli\\": "src/StatsyCli/",
+      "Robert430404\\StatsyCli\\Tests\\": "tests/StatsyCli/"
+    }
   }
 }
