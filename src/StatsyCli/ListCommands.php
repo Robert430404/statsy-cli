@@ -48,6 +48,10 @@ class ListCommands
                 'Command'     => 'memory:free',
                 'Description' => 'Returns the free memory in bytes'
             ],
+            [
+                'Command'     => 'memory:available',
+                'Description' => 'Returns the available memory in bytes'
+            ],
         ]);
     }
 }
