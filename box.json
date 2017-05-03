@@ -1,0 +1,23 @@
+{
+  "chmod": "0755",
+  "directories": [
+    "src",
+    "config",
+    "tests",
+    "vendor"
+  ],
+  "files": [
+    "LICENSE"
+  ],
+  "finder": [
+    {
+      "name": "*.php",
+      "exclude": ["Tests"],
+      "in": "vendor"
+    }
+  ],
+  "git-version": "package_version",
+  "main": "src/runner",
+  "output": "statsy.phar",
+  "stub": true
+}
