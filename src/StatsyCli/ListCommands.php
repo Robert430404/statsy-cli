@@ -33,16 +33,20 @@ class ListCommands
     {
         $this->climate->table([
             [
-                'Command'     => 'statsy list',
-                'Description' => 'Lists this dialog with all commands'
+                'Command'     => 'list',
+                'Description' => 'Shows this table with all of our commands'
             ],
             [
-                'Command'     => 'statsy memory:total',
+                'Command'     => 'memory:total',
                 'Description' => 'Returns the total memory in bytes'
             ],
             [
-                'Command'     => 'statsy memory:used',
+                'Command'     => 'memory:used',
                 'Description' => 'Returns the used memory in bytes'
+            ],
+            [
+                'Command'     => 'memory:free',
+                'Description' => 'Returns the free memory in bytes'
             ],
         ]);
     }

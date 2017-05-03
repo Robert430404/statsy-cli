@@ -7,11 +7,11 @@ use League\CLImate\CLImate;
 use Tms157\Statsy\Factories\MemoryFactory;
 
 /**
- * Class GetTotal
+ * Class GetFree
  *
  * @package Robert430404\StatsyCli\Memory
  */
-class GetTotal
+class GetFree
 {
     /**
      * @var Memory
@@ -24,12 +24,12 @@ class GetTotal
     private $climate;
 
     /**
-     * GetTotal constructor.
+     * GetFree constructor.
      */
     public function __construct()
     {
         $this->climate = new CLImate();
-        $this->memory = new Memory(
+        $this->memory  = new Memory(
             new MemoryFactory()
         );
     }
@@ -42,7 +42,7 @@ class GetTotal
     public function run(): void
     {
         $this->climate->info(
-            $this->memory->getTotal()->getB()
+            $this->memory->getFree()->getB()
         );
     }
 }
