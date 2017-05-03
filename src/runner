@@ -1,9 +1,12 @@
 #!/usr/bin/env php
 <?php
 
+// Bootstraps the dependencies
 require __DIR__ . '/../vendor/autoload.php';
 
+// Configures the commands
 $commands  = include_once __DIR__ . '/../config/commands.php';
 $command   = $argv[1] ?? 'list';
 
-(new $commands[$command]())->run();
+// Checks if command is registered and runs it
+isset($commands[$command]) ? (new $commands[$command]())->run() : (new $commands['list']())->run();
