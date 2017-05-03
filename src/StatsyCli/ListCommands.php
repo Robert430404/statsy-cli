@@ -18,6 +18,9 @@ class ListCommands
 
     /**
      * ListCommands constructor.
+     *
+     * Creates the environment for the command to run. In this case it's associating an instance of CLImate to the
+     * property inside of the object.
      */
     public function __construct()
     {
@@ -26,6 +29,9 @@ class ListCommands
 
     /**
      * Runs the command
+     *
+     * This command is responsible for listing all of the commands inside of the application. It contains the command
+     * signature and a brief description of the commands functionality.
      *
      * @return void
      */
