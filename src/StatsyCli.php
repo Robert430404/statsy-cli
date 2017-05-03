@@ -1,11 +1,15 @@
 <?php
-/**
- * StatsyCli
- */
-class StatsyCli
-{
-    public static function run($config) {
-         echo "Application is now running with the following configuration... ";
-         var_dump($config);
-     }
-}
+
+use Tms157\Statsy\Memory;
+use Tms157\Statsy\Factories\MemoryFactory;
+use League\CLImate\CLImate;
+
+require __DIR__ . '/../vendor/autoload.php';
+
+$memory  = new Memory(
+    new MemoryFactory()
+);
+$climate = new CLImate();
+
+$climate->whisper(  );
+$climate->info( $memory->getUsed()->getMb() );

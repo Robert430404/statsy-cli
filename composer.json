@@ -1,0 +1,23 @@
+{
+  "name": "robert430404/statsy-cli",
+  "description": "This is a command line tool for reading system information",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Robert Cox",
+      "email": "robert@studiorclv.com"
+    }
+  ],
+  "minimum-stability": "dev",
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/Tms157/StatsyOOP-V2.git"
+    }
+  ],
+  "require": {
+    "league/climate": "^3.2",
+    "Tms157/Statsy": "master"
+  }
+}
