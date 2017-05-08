@@ -40,23 +40,11 @@ class ListCommands
         $this->climate->table([
             [
                 'Command'     => 'list',
-                'Description' => 'Shows this table with all of our commands'
+                'Description' => 'Shows a table with all of the root commands'
             ],
             [
-                'Command'     => 'memory:total',
-                'Description' => 'Returns the total memory in bytes'
-            ],
-            [
-                'Command'     => 'memory:used',
-                'Description' => 'Returns the used memory in bytes'
-            ],
-            [
-                'Command'     => 'memory:free',
-                'Description' => 'Returns the free memory in bytes'
-            ],
-            [
-                'Command'     => 'memory:available',
-                'Description' => 'Returns the available memory in bytes'
+                'Command'     => 'memory',
+                'Description' => 'Lists all of the memory functions'
             ],
         ]);
     }
