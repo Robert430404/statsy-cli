@@ -1,13 +1,13 @@
 <?php
 
-namespace Robert430404\StatsyCli\Contacts;
+namespace Robert430404\StatsyCli\Contracts;
 
 /**
  * Interface Command
  *
  * This specifies the required methods for a valid command inside of the statsy cli client.
  *
- * @package Robert430404\StatsyCli\Contacts
+ * @package Robert430404\StatsyCli\Contracts
  */
 interface Command
 {

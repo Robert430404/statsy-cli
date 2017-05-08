@@ -3,7 +3,7 @@
 namespace Robert430404\StatsyCli;
 
 use League\CLImate\CLImate;
-use Robert430404\StatsyCli\Contacts\Command;
+use Robert430404\StatsyCli\Contracts\Command;
 
 /**
  * Class ListCommands

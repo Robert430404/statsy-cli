@@ -2,7 +2,7 @@
 
 namespace Robert430404\StatsyCli\Memory;
 
-use Robert430404\StatsyCli\Contacts\Command;
+use Robert430404\StatsyCli\Contracts\Command;
 use Tms157\Statsy\Memory;
 use League\CLImate\CLImate;
 use Tms157\Statsy\Factories\MemoryFactory;
