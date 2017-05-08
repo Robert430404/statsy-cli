@@ -54,19 +54,19 @@ class MemoryMonitor implements Command
     /**
      * Refreshes The Memory Object With New Data
      *
+     * TODO: Find A Better Reading Method For Updating Memory File Contents
+     *
      * @return void
      */
     private function refreshMemory(): void
     {
-        $this->memory  = new Memory(
+        $this->memory = new Memory(
             new MemoryFactory()
         );
     }
 
     /**
      * Displays The Memory Monitoring Dashboard
-     *
-     * TODO: Find A Better Reading Method For Updating Memory File Contents
      *
      * @return void
      */
