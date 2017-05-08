@@ -3,13 +3,14 @@
 namespace Robert430404\StatsyCli;
 
 use League\CLImate\CLImate;
+use Robert430404\StatsyCli\Contacts\Command;
 
 /**
  * Class ListCommands
  *
  * @package Robert430404\StatsyCli
  */
-class ListCommands
+class ListCommands implements Command
 {
     /**
      * @var CLImate

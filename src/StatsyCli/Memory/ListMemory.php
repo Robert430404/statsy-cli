@@ -3,8 +3,14 @@
 namespace Robert430404\StatsyCli\Memory;
 
 use League\CLImate\CLImate;
+use Robert430404\StatsyCli\Contacts\Command;
 
-class ListMemory
+/**
+ * Class ListMemory
+ *
+ * @package Robert430404\StatsyCli\Memory
+ */
+class ListMemory implements Command
 {
     /**
      * @var CLImate

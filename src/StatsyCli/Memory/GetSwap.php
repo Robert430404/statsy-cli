@@ -2,6 +2,7 @@
 
 namespace Robert430404\StatsyCli\Memory;
 
+use Robert430404\StatsyCli\Contacts\Command;
 use Tms157\Statsy\Memory;
 use League\CLImate\CLImate;
 use Tms157\Statsy\Factories\MemoryFactory;
@@ -11,7 +12,7 @@ use Tms157\Statsy\Factories\MemoryFactory;
  *
  * @package Robert430404\StatsyCli\Memory
  */
-class GetSwap
+class GetSwap implements Command
 {
     /**
      * @var Memory
