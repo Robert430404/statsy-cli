@@ -21,4 +21,5 @@ return [
     'memory:used:percent'   => '\Robert430404\StatsyCli\Memory\GetUsedPercent',
     'monitor'               => '\Robert430404\StatsyCli\Monitoring\ListMonitors',
     'monitor:memory'        => '\Robert430404\StatsyCli\Monitoring\MemoryMonitor',
+    'monitor:cpu'           => '\Robert430404\StatsyCli\Monitoring\CPUMonitor',
 ];
