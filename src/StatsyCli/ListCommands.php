@@ -47,6 +47,10 @@ class ListCommands implements Command
                 'Command'     => 'memory',
                 'Description' => 'Lists all of the memory functions'
             ],
+            [
+                'Command'     => 'monitor',
+                'Description' => 'Lists all of the monitor functions'
+            ],
         ]);
     }
 }

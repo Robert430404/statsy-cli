@@ -19,5 +19,6 @@ return [
     'memory:sunreclaimable' => '\Robert430404\StatsyCli\Memory\GetSUnreclaimable',
     'memory:used'           => '\Robert430404\StatsyCli\Memory\GetUsed',
     'memory:used:percent'   => '\Robert430404\StatsyCli\Memory\GetUsedPercent',
+    'monitor'               => '\Robert430404\StatsyCli\Monitoring\ListMonitors',
     'monitor:memory'        => '\Robert430404\StatsyCli\Monitoring\MemoryMonitor',
 ];

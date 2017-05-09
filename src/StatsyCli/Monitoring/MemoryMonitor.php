@@ -45,7 +45,7 @@ class MemoryMonitor implements Command
      */
     public function run(): void
     {
-        while (1 < 2) {
+        while (true) {
             $this->refreshMemory();
             $this->displayOutput();
         }
@@ -54,7 +54,7 @@ class MemoryMonitor implements Command
     /**
      * Refreshes The Memory Object With New Data
      *
-     * TODO: Find A Better Reading Method For Updating Memory File Contents
+     * TODO: Find A Better Way To Read Proc Updates
      *
      * @return void
      */
@@ -73,11 +73,16 @@ class MemoryMonitor implements Command
     private function displayOutput(): void
     {
         $this->climate->clear();
-        $this->climate->table([
+        $this->climate->bold()->table([
             [
-                'Used %'  => $this->memory->getUsedPercent() . '%',
-                'Free'    => floor($this->memory->getRealFree()->getMb()) . ' mb',
-                'Total'   => floor($this->memory->getTotal()->getMb()) . ' mb',
+                'Used %'    => $this->memory->getUsedPercent()        . '%',
+                'Available' => $this->memory->getAvailable()->getMb() . ' MB',
+                'Free'      => $this->memory->getFree()->getMb()      . ' MB',
+                'Real Free' => $this->memory->getRealFree()->getMb()  . ' MB',
+                'Buffer'    => $this->memory->getBuffer()->getMb()    . ' MB',
+                'Cached'    => $this->memory->getCached()->getMb()    . ' MB',
+                'Swap'      => $this->memory->getSwap()->getMb()      . ' MB',
+                'Total'     => $this->memory->getTotal()->getMb()     . ' MB',
             ],
         ]);
         sleep(1); // Forces A Refresh Every Second
